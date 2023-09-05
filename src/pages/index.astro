@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to PT Samudra Sukses Nusantara">
+	<div class="container">
+		<img src="/coming-soon.webp" alt="Coming Soon Illustration" />
+		<h1>Coming Soon</h1>
+		<h2>PT. Samudra Sukses Nusantara</h2>
+		<p>We're working on something exciting. Stay tuned!</p>
+	</div>
+</Layout>
+
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.container {
+		text-align: center;
+		background-color: #fff;
+		padding: 40px;
+		border-radius: 8px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	h1 {
+		font-size: 36px;
+		margin: 20px 0;
+		color: #333;
+	}
+
+	p {
+		font-size: 18px;
+		color: #666;
+	}
+
+	.container:hover {
+		transform: scale(1.02);
+		transition: transform 0.3s ease-in-out;
+	}
+</style>
