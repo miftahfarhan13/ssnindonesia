@@ -10,7 +10,7 @@ const Navbar = () => {
           />
           <a
             className="navbar-brand fw-bolder ms-lg-0 "
-            href="https://www.creative-tim.com/astro"
+            href="/"
           >
             Samudra Sukses Nusantara
           </a>
