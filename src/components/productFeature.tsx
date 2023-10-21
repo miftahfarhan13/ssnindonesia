@@ -1,5 +1,6 @@
 import ProductFeatureImg from "./productFeatureImg";
 import ProductFeatureDetails from "./productFeatureDetails";
+import "./style.css";
 
 interface Props {
   title: string;
@@ -31,7 +32,12 @@ export default function ProductOverview({
         <div className="row align-items-center">
           <div className="col-12 col-lg-6 pe-5">
             <div className="row">
-              <h2 className="mb-3">Mengapa Harus Memilih Kami?</h2>
+              <div className="position-relative d-flex flex-column mb-2">
+                <h2 className="title-section align-self-start">
+                  Keunggulan Produk Kami
+                </h2>
+                <div className="line-bg"></div>
+              </div>
               <p className="mb-5">
                 Kami adalah pilihan utama Anda untuk produk laut berkualitas
                 tinggi yang lebih dari sekadar makanan. Temukan alasan mengapa
