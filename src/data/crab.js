@@ -3,7 +3,7 @@ export const crabs = [
     slug: 'live-crab',
     name: 'LIVE CRAB | KEPITING BAKAU',
     scientificName: 'Scylla Serrata',
-    imageUrl: '',
+    imageUrl: '/images/product/crab/kepiting-bakau.webp',
     characteristicsEn: [
       'The body is usually wide with a hard shell that protects the body parts.',
       'Has a body length between 20 to 30 cm. Some larger individuals can reach more than 40 cm.',
@@ -31,7 +31,7 @@ export const crabs = [
     slug: 'soft-crab',
     name: 'SOFT CRAB | KEPITING SOKA',
     scientificName: 'Scylla Serrata',
-    imageUrl: '',
+    imageUrl: '/images/product/crab/soka.jpeg',
     characteristicsEn: [
       'It has a red or orange shell that tends to be bright.',
       'The body is wide and flat with a hard shell that protects the body parts. when it has been processed its shell becomes soft, and has a pair of strong claws and feet suitable for walking on the seabed.',
@@ -61,7 +61,7 @@ export const crabs = [
     slug: 'flower-crab',
     name: 'FLOWER CRAB | KEPITING RAJUNGAN',
     scientificName: 'Portunus pelagicus',
-    imageUrl: '',
+    imageUrl: '/images/product/crab/rajungan.jpg',
     characteristicsEn: [
       'The hard, flat shell varies in color from red to orange to brown.',
       'Its body is triangular in shape with several distinctive features, such as strong claws and feet suitable for swimming and walking on the seabed.',

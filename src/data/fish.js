@@ -3,7 +3,7 @@ export const fish = [
     slug: 'milkfish',
     name: 'MILKFISH | IKAN BANDENG',
     scientificName: 'Chanos-Chanos',
-    imageUrl: '',
+    imageUrl: '/images/product/fish/bandeng.jpg',
     characteristicsEn: [
       'It has a slightly flat and cylindrical body with a long dorsal fin. Its body is covered with small, soft scales.',
       'The body color is silvery or bluish gray with several slightly dark horizontal stripes along the sides.',
@@ -33,7 +33,7 @@ export const fish = [
     slug: 'boneless-milkfish',
     name: 'BONELESS MILKFISH | BANDENG TANPA DURI',
     scientificName: 'Chanos-Chanos',
-    imageUrl: '',
+    imageUrl: '/images/product/fish/bandeng-tanpa-duri.webp',
     characteristicsEn: [
       'Milkfish that has had its spines removed still has a slightly flattened and cylindrical body shape with a long dorsal fin.',
       'The size of milkfish that has been processed without the bones can vary depending on how it is processed and how it is packaged. Usually sold in various sizes, from small filets to larger pieces.',

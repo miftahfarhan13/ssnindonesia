@@ -4,28 +4,12 @@ import ProductItem from './productItem';
 import { categories } from '../../data/category';
 
 export default function ListProduct() {
-  const tabs = ['Shrimp', 'Lobster', 'Crab', 'Fish'];
-
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {
     console.log('running');
     setActiveTab(index);
   };
-
-  const productList = [];
-
-  for (let index = 0; index < 6; index++) {
-    productList.push(
-      <div className="col-sm-12 col-md-3">
-        <ProductItem
-          image={'/images/img-1.jpg'}
-          title={'English Name | Indonesian Name'}
-          latinName={'Latin Name'}
-        ></ProductItem>
-      </div>
-    );
-  }
 
   return (
     <div
@@ -52,7 +36,9 @@ export default function ListProduct() {
           {categories[activeTab].products.map((product) => (
             <div className="col-sm-12 col-md-3">
               <ProductItem
-                image={'/images/img-1.jpg'}
+                image={
+                  product?.imageUrl ? product?.imageUrl : '/images/img-1.jpg'
+                }
                 title={product?.name}
                 latinName={product?.scientificName}
               ></ProductItem>

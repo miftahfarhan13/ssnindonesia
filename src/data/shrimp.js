@@ -5,7 +5,7 @@ export const shrimps = [
     slug: 'black-tiger',
     name: 'BLACK TIGER | WINDU',
     scientificName: 'Penaeus monodon',
-    imageUrl: '',
+    imageUrl: '/images/product/shrimp/black-tiger.webp',
     process: process,
     characteristicsEn: [
       'Shrimp that have a large size range reaches a size with a body length reaching 30 to 35 cm.',
@@ -47,7 +47,7 @@ export const shrimps = [
     slug: 'white',
     name: 'WHITE | UDANG PUTIH',
     scientificName: 'Litopenaeus vannamei',
-    imageUrl: '',
+    imageUrl: '/images/product/shrimp/white.jpg',
     process: process,
     characteristicsEn: [
       'Has a body that is almost transparent or creamy white. And tend not to have a striking color pattern.',
@@ -81,7 +81,7 @@ export const shrimps = [
     slug: 'pink',
     name: 'PINK | UDANG DOGOL',
     scientificName: 'Metapenaeus monocero',
-    imageUrl: '',
+    imageUrl: '/images/product/shrimp/dogol.jpg',
     process: process,
     characteristicsEn: [
       'Has a body that is pink or red in color. Some individuals can have a paler or transparent color in certain parts of the body.',
@@ -115,7 +115,7 @@ export const shrimps = [
     slug: 'yellow',
     name: 'YELLOW | UDANG JERBUNG',
     scientificName: 'Panaeus merguinensi',
-    imageUrl: '',
+    imageUrl: '/images/product/shrimp/jerbung.jpg',
     process: process,
     characteristicsEn: [
       'The body is long and relatively slender with well-defined abdominal segments.',
