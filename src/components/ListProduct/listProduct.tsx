@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from 'react';
 import './listProduct.css';
 import ProductItem from './productItem';

@@ -20,7 +20,7 @@ export default function ProductOverview({
 }: Props) {
   return (
     <>
-      <div className="card card-product card-plain">
+      <div className='py-5'>
         {/* <div className="row">
           <div className="col-12 col-lg-7 mx-auto text-center">
             {title.length != 0 && <h2 className="mb-3">{title}</h2>}
