@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { useState } from 'react';
 import './listProduct.css';
@@ -38,6 +38,7 @@ export default function ListProduct() {
           {categories[activeTab].products.map((product) => (
             <div className="col-sm-12 col-md-3">
               <ProductItem
+                slug={product?.slug}
                 image={
                   product?.imageUrl ? product?.imageUrl : '/images/img-1.jpg'
                 }

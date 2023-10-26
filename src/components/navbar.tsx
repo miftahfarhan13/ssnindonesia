@@ -57,7 +57,7 @@ const Navbar = () => {
               <a
                 className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 "
                 aria-current="page"
-                href="/astro-ecommerce/"
+                href="/produk"
               >
                 Produk
               </a>

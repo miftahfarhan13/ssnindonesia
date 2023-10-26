@@ -1,18 +1,18 @@
 export const process = [
   {
     name: 'Head Less [HL]',
-    imageUrl: ''
+    imageUrl: '/images/product/hl.png'
   },
   {
     name: 'Peeled Deveined [PD]',
-    imageUrl: ''
+    imageUrl: '/images/product/pd.png'
   },
   {
     name: 'Head On [HO]',
-    imageUrl: ''
+    imageUrl: '/images/product/ho.png'
   },
   {
     name: 'Peeled and Deveined [PUD]',
-    imageUrl: ''
+    imageUrl: '/images/product/pud.png'
   }
 ];

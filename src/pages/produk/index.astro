@@ -1,0 +1,27 @@
+---
+import CategoryProduct from '../../components/Home/CategoryProduct.astro';
+import ListProduct from '../../components/ListProduct/listProduct';
+import Footer from '../../components/footer';
+import Navbar from '../../components/navbar';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to PT Samudra Sukses Nusantara">
+  <Navbar />
+  <CategoryProduct />
+  <div class="container py-5 d-flex flex-column gap-2">
+    <div class="position-relative d-flex flex-column mb-2">
+      <h2
+        class="title-section align-self-center"
+        style="font-family: 'Playfair Display', serif;"
+      >
+        List Product
+      </h2>
+      <div class="line-bg"></div>
+    </div>
+    <ListProduct client:load />
+  </div>
+  <div class="container py-4">
+    <Footer />
+  </div>
+</Layout>
