@@ -6,6 +6,7 @@ import ProductFeature from "../components/productFeature";
 import Footer from "../components/footer";
 import PromoSectionLarge from "../components/promoSectionLarge";
 import ListProduct from "../components/ListProduct/listProduct";
+import ListCertificate from "../components/ListCertificate/listCertificate";
 
 const productFeature = {
   images: [
@@ -166,7 +167,9 @@ const productFeature = {
   <div id="selling-points">
     <div class="container py-6 d-flex flex-column gap-2">
       <div class="position-relative d-flex flex-column mb-6">
-        <h2 class="title-section align-self-center">Mengapa Harus Memilih Kami?</h2>
+        <h2 class="title-section align-self-center">
+          Mengapa Harus Memilih Kami?
+        </h2>
         <div class="line-bg"></div>
       </div>
 
@@ -227,7 +230,8 @@ const productFeature = {
       <h2 class="title-section align-self-center">Our Certifications</h2>
       <div class="line-bg"></div>
     </div>
-    <img src="../images/ssn-certificate.png" alt="" class="certificate-image" />
+    <ListCertificate client:load />
+    <!-- <img src="../images/ssn-certificate.png" alt="" class="certificate-image" /> -->
   </div>
   <div class="container py-6 d-flex flex-column gap-2">
     <div class="position-relative d-flex flex-column mb-2">
