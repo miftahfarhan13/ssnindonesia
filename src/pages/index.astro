@@ -1,10 +1,10 @@
 ---
-import "../../assets/scss/astro-ecommerce.scss";
+// import "../../assets/scss/astro-ecommerce.scss";
 import Navbar from '../components/navbar';
 import ProductFeature from '../components/productFeature';
 import Footer from '../components/footer';
 import PromoSectionLarge from '../components/promoSectionLarge';
-import ListCertificate from "../components/ListCertificate/listCertificate";
+import ListCertificate from '../components/ListCertificate/listCertificate';
 import Layout from '../layouts/Layout.astro';
 import ListProduct from '../components/ListProduct/listProduct';
 import CategoryProduct from '../components/Home/CategoryProduct.astro';
@@ -230,13 +230,7 @@ const productFeature = {
     <!-- <img src="../images/ssn-certificate.png" alt="" class="certificate-image" /> -->
   </div>
   <div class="container py-5">
-    <PromoSectionLarge
-      title="Temukan Kualitas Terbaik dari Lautan: Produk Ekspor Laut Kami Menanti Anda!"
-      full_description="Jelajahi kekayaan laut dalam produk ekspor unggulan kami yang segar, bermutu, dan terjamin keamanannya. Dari seafood hingga hasil laut berkualitas tinggi, kami hadirkan yang terbaik untuk Anda. Dapatkan pengalaman kuliner yang memukau dan sehat dengan memilih produk kami yang berkualitas."
-      pageHeaderBgImg={'https://iili.io/J9WroQf.jpg'}
-      pageHeaderMinVh="50vh"
-      pageHeaderRadius="1rem"
-    />
+    <PromoSectionLarge />
   </div>
   <section class="bg-dark background-footer">
     <div
@@ -249,7 +243,7 @@ const productFeature = {
           ><span class="fw-bolder">Address:</span> Karang Anyar Pantai, Tarakan
           Barat, Tarakan City, North Kalimantan</span
         >
-        <span><span class="fw-bolder">Phone:</span> +1 (123) 456-7890</span>
+        <span><span class="fw-bolder">Phone:</span> +(62)812-4605-9191</span>
         <span><span class="fw-bolder">Email:</span> ssn@gmail.com</span>
         <span>
           <span class="fw-bolder">Operational Hours:</span>
