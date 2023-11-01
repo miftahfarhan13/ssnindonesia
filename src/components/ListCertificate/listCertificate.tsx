@@ -10,33 +10,33 @@ export default function ListCertificate() {
   const [productIndex, setProductIndex] = useState(0);
   const listCertificate = [
     {
-      image: "../../public/images/cert-3.jpg",
+      image: "/images/cert-3.jpg",
       title: 'Certificate of "Good Manufacturing Practices" Milkfish Frozen',
     },
     {
-      image: "../../public/images/cert-1.jpg",
+      image: "/images/cert-1.jpg",
       title: "Good Quarantine Practices Certificate",
     },
     {
-      image: "../../public/images/cert-4.jpg",
+      image: "/images/cert-4.jpg",
       title: 'Certificate of "Good Manufacturing Practices" Soka Crab',
     },
     {
-      image: "../../public/images/cert-2.jpg",
+      image: "/images/cert-2.jpg",
       title: "Fish Quarantine Installation Certificate",
     },
     {
-      image: "../../public/images/cert-5.jpg",
+      image: "/images/cert-5.jpg",
       title: 'Certificate of "Good Manufacturing Practices" Shrimp Frozen',
     },
   ];
 
   const certificateImage = [
-    "../../public/images/cert-3.jpg",
-    "../../public/images/cert-1.jpg",
-    "../../public/images/cert-4.jpg",
-    "../../public/images/cert-2.jpg",
-    "../../public/images/cert-5.jpg",
+    "/images/cert-3.jpg",
+    "/images/cert-1.jpg",
+    "/images/cert-4.jpg",
+    "/images/cert-2.jpg",
+    "/images/cert-5.jpg",
   ];
 
   const handleClick = (index) => {
