@@ -13,6 +13,7 @@
   border-radius: 10px;
   background-color: white;
   transition: all 0.225s ease-in-out;
+  cursor: pointer;
 }
 
 .cert-card:hover {

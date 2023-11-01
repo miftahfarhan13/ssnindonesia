@@ -1,0 +1,102 @@
+---
+import Footer from '../../components/footer';
+import Navbar from '../../components/navbar';
+import { crabs } from '../../data/crab';
+import { fish } from '../../data/fish';
+import { lobsters } from '../../data/lobster';
+import { shrimps } from '../../data/shrimp';
+import Layout from '../../layouts/Layout.astro';
+
+const { slug } = Astro.params;
+const product1 = crabs;
+const products = product1.concat(shrimps, fish, lobsters);
+
+const product = products.find((find) => find.slug === slug);
+---
+
+<Layout title="Welcome to PT Samudra Sukses Nusantara">
+  <Navbar />
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-sm-6">
+        <div class="d-flex flex-column gap-4">
+          <img
+            src={product?.imageUrl}
+            class="img-fluid rounded w-100 h-auto"
+            style="object-fit: cover; max-height: 400px;"
+          />
+          <button class="btn btn-success btn-lg w-100">Hubungi Kami</button>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="d-flex flex-column">
+          <div class="position-relative d-flex flex-column mb-6">
+            <h1
+              class="title-section align-self-start"
+              style="font-family: 'Playfair Display', serif;"
+            >
+              {product?.name}
+            </h1>
+            <div class="line-bg"></div>
+          </div>
+          <p class="fs-6 mb-3" style="color: grey;">
+            {product?.scientificName}
+          </p>
+          {
+            product?.process && (
+              <div class="d-flex flex-column gap-2 mb-3">
+                <div class="fs-5 fw-bolder" style="color: black;">
+                  Tipe
+                </div>
+                <div class="row">
+                  {product?.process?.map((pro) => (
+                    <div class="col-6 col-md-3">
+                      <div class="d-flex flex-column">
+                        <img src={pro?.imageUrl} class="img-fluid rounded" />
+                        <div class="text-center" style="font-size: 14px;">
+                          {pro?.name}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          }
+          <div class="d-flex flex-column gap-2">
+            <div class="fs-5 fw-bolder" style="color: black;">
+              Karakteristik
+            </div>
+            <ol class="list-group list-group-numbered">
+              {
+                product?.characteristicsId?.map((char) => (
+                  <li class="list-group-item">{char}</li>
+                ))
+              }
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-4">
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .line-bg {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    background-color: #e1e7ec;
+    z-index: 1;
+  }
+
+  .title-section {
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 20px;
+    z-index: 2;
+  }
+</style>

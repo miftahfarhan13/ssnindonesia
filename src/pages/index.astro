@@ -1,50 +1,51 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import "../../assets/scss/astro-ecommerce.scss";
-import Navbar from "../components/navbar";
-import ProductFeature from "../components/productFeature";
-import Footer from "../components/footer";
-import PromoSectionLarge from "../components/promoSectionLarge";
-import ListProduct from "../components/ListProduct/listProduct";
+import Navbar from '../components/navbar';
+import ProductFeature from '../components/productFeature';
+import Footer from '../components/footer';
+import PromoSectionLarge from '../components/promoSectionLarge';
 import ListCertificate from "../components/ListCertificate/listCertificate";
+import Layout from '../layouts/Layout.astro';
+import ListProduct from '../components/ListProduct/listProduct';
+import CategoryProduct from '../components/Home/CategoryProduct.astro';
 
 const productFeature = {
   images: [
     {
-      src: "https://iili.io/J9WroQf.jpg",
-      alt: "first_image",
+      src: 'https://iili.io/J9WroQf.jpg',
+      alt: 'first_image'
     },
     {
-      src: "https://iili.io/J9Wr2rN.jpg",
-      alt: "second_image",
+      src: 'https://iili.io/J9Wr2rN.jpg',
+      alt: 'second_image'
     },
     {
-      src: "https://iili.io/J9Wrd1p.jpg",
-      alt: "third_image",
-    },
+      src: 'https://iili.io/J9Wrd1p.jpg',
+      alt: 'third_image'
+    }
   ],
   featuresDetails: {
     Quality: {
-      headlineText: "Kualitas Utama: ",
+      headlineText: 'Kualitas Utama: ',
       bodyText:
-        "Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.",
+        'Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.'
     },
     Continuity: {
-      headlineText: "Keberlanjutan: ",
+      headlineText: 'Keberlanjutan: ',
       bodyText:
-        "Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.",
+        'Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.'
     },
     Send: {
-      headlineText: "Pengiriman Cepat dan Aman: ",
+      headlineText: 'Pengiriman Cepat dan Aman: ',
       bodyText:
-        "Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.",
+        'Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.'
     },
     Services: {
-      headlineText: "Pelayanan Pelanggan Terbaik: ",
+      headlineText: 'Pelayanan Pelanggan Terbaik: ',
       bodyText:
-        "Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.",
-    },
-  },
+        'Produk kami dipilih dengan cermat untuk memastikan rasa dan kesegarannya yang tak tertandingi.'
+    }
+  }
 };
 
 // const myCarouselElement = document.querySelector('#carouselExampleCaptions')
@@ -57,105 +58,96 @@ const productFeature = {
 
 <Layout title="Welcome to PT Samudra Sukses Nusantara">
   <Navbar />
-  <div
-    id="carouselExampleCaptions"
-    class="carousel slide"
-    data-bs-ride="carousel"
-  >
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="https://iili.io/J9WroQf.jpg"
-          class="d-block w-100 carousel-image"
-          alt="..."
-        />
-        <div class="carousel-caption">
-          <h1 class="title fs-1 fw-bolder text-white">
-            Selamat Datang di PT SAMUDRA SUKSES NUSANTARA
-          </h1>
-          <div class="body-content text-center text-white">
-            Dapatkan pengalaman luar biasa dalam produk laut segar berkualitas
-            tinggi. Kami adalah mitra eksportir pilihan untuk ikan dan hasil
-            laut terbaik. Kualitas dan layanan unggulan kami adalah jaminan
-            kepuasan Anda.
-          </div>
+  <div class="position-relative">
+    <div class="centered-div" style="z-index: 2;">
+      <div class="d-flex flex-column align-items-center" style="gap: 20px;">
+        <h1
+          class="fw-bolder text-white text-center"
+          style="font-size: 40px; font-family: 'Playfair Display', serif;"
+        >
+          PREMIUM SEAFOOD <br />
+          <span style="font-size: 50px;">SUPPLIERS</span>
+        </h1>
+        <div
+          class="body-content text-center text-white"
+          style="max-width: 600px;"
+        >
+          Dapatkan pengalaman luar biasa dalam produk laut segar berkualitas
+          tinggi. Hubungi kami sekarang.
         </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://iili.io/J9Wr2rN.jpg"
-          class="d-block w-100 carousel-image"
-          alt="..."
-        />
-        <div class="carousel-caption">
-          <h1 class="title fs-1 fw-bolder text-white">
-            Selamat Datang di PT SAMUDRA SUKSES NUSANTARA
-          </h1>
-          <div class="body-content text-center text-white">
-            Dapatkan pengalaman luar biasa dalam produk laut segar berkualitas
-            tinggi. Kami adalah mitra eksportir pilihan untuk ikan dan hasil
-            laut terbaik. Kualitas dan layanan unggulan kami adalah jaminan
-            kepuasan Anda.
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://iili.io/J9Wrd1p.jpg"
-          class="d-block w-100 carousel-image"
-          alt="..."
-        />
-        <div class="carousel-caption">
-          <h1 class="title fs-1 fw-bolder text-white">
-            Selamat Datang di PT SAMUDRA SUKSES NUSANTARA
-          </h1>
-          <div class="body-content text-center text-white">
-            Dapatkan pengalaman luar biasa dalam produk laut segar berkualitas
-            tinggi. Kami adalah mitra eksportir pilihan untuk ikan dan hasil
-            laut terbaik. Kualitas dan layanan unggulan kami adalah jaminan
-            kepuasan Anda.
-          </div>
-        </div>
+        <button class="btn button-header">Hubungi Kami</button>
       </div>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="prev"
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
     >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://iili.io/J9WroQf.jpg"
+            class="d-block w-100 carousel-image"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://iili.io/J9Wr2rN.jpg"
+            class="d-block w-100 carousel-image"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://iili.io/J9Wrd1p.jpg"
+            class="d-block w-100 carousel-image"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
+
+  <CategoryProduct />
+
   <div id="product-feature" class="container py-6">
     <ProductFeature
       title="Product Features"
@@ -164,10 +156,25 @@ const productFeature = {
       featuresDetails={productFeature.featuresDetails}
     />
   </div>
+  <div class="container py-5 d-flex flex-column gap-2">
+    <div class="position-relative d-flex flex-column mb-2">
+      <h2
+        class="title-section align-self-center"
+        style="font-family: 'Playfair Display', serif;"
+      >
+        List Product
+      </h2>
+      <div class="line-bg"></div>
+    </div>
+    <ListProduct client:load />
+  </div>
   <div id="selling-points">
-    <div class="container py-6 d-flex flex-column gap-2">
+    <div class="container py-5 d-flex flex-column gap-2">
       <div class="position-relative d-flex flex-column mb-6">
-        <h2 class="title-section align-self-center">
+        <h2
+          class="title-section align-self-center"
+          style="font-family: 'Playfair Display', serif;"
+        >
           Mengapa Harus Memilih Kami?
         </h2>
         <div class="line-bg"></div>
@@ -175,11 +182,7 @@ const productFeature = {
 
       <div class="row">
         <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
-          <img
-            src="../../public/images/kualitas.svg"
-            alt=""
-            class="selling-point-image"
-          />
+          <img src="/images/kualitas.svg" alt="" class="selling-point-image" />
           <h4>Kualitas</h4>
           <p class="text-center">
             Kewajiban kami adalah menjaga agar produk tetap bersih dan segar
@@ -187,11 +190,7 @@ const productFeature = {
           </p>
         </div>
         <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
-          <img
-            src="../../public/images/komitmen.svg"
-            alt=""
-            class="selling-point-image"
-          />
+          <img src="/images/komitmen.svg" alt="" class="selling-point-image" />
           <h4>Komitmen</h4>
           <p class="text-center">
             Samudra Sukses Nusantara berkomitmen untuk memberikan yang terbaik
@@ -199,11 +198,7 @@ const productFeature = {
           </p>
         </div>
         <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
-          <img
-            src="../../public/images/tim.svg"
-            alt=""
-            class="selling-point-image"
-          />
+          <img src="/images/tim.svg" alt="" class="selling-point-image" />
           <h4>Tim</h4>
           <p class="text-center">
             Kekuatan utama kami adalah tim yang jujur, berkomitmen, dan
@@ -211,11 +206,7 @@ const productFeature = {
           </p>
         </div>
         <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
-          <img
-            src="../../public/images/kerjasama.svg"
-            alt=""
-            class="selling-point-image"
-          />
+          <img src="/images/kerjasama.svg" alt="" class="selling-point-image" />
           <h4>Kerja Sama</h4>
           <p class="text-center">
             Memperluas jaringan peluang kerja sama sejauh mungkin demi
@@ -225,26 +216,24 @@ const productFeature = {
       </div>
     </div>
   </div>
-  <div class="container py-6 d-flex flex-column gap-2">
+  <div class="container py-5 d-flex flex-column gap-2">
     <div class="position-relative d-flex flex-column mb-6">
-      <h2 class="title-section align-self-center">Our Certifications</h2>
+      <h2
+        class="title-section align-self-center"
+        style="font-family: 'Playfair Display', serif;"
+      >
+        Our Certifications
+      </h2>
       <div class="line-bg"></div>
     </div>
     <ListCertificate client:load />
     <!-- <img src="../images/ssn-certificate.png" alt="" class="certificate-image" /> -->
   </div>
-  <div class="container py-6 d-flex flex-column gap-2">
-    <div class="position-relative d-flex flex-column mb-2">
-      <h2 class="title-section align-self-center">List Product</h2>
-      <div class="line-bg"></div>
-    </div>
-    <ListProduct client:load />
-  </div>
-  <div class="container py-6">
+  <div class="container py-5">
     <PromoSectionLarge
       title="Temukan Kualitas Terbaik dari Lautan: Produk Ekspor Laut Kami Menanti Anda!"
       full_description="Jelajahi kekayaan laut dalam produk ekspor unggulan kami yang segar, bermutu, dan terjamin keamanannya. Dari seafood hingga hasil laut berkualitas tinggi, kami hadirkan yang terbaik untuk Anda. Dapatkan pengalaman kuliner yang memukau dan sehat dengan memilih produk kami yang berkualitas."
-      pageHeaderBgImg={"https://iili.io/J9WroQf.jpg"}
+      pageHeaderBgImg={'https://iili.io/J9WroQf.jpg'}
       pageHeaderMinVh="50vh"
       pageHeaderRadius="1rem"
     />
@@ -290,16 +279,16 @@ const productFeature = {
 </Layout>
 
 <script>
-  const headerCta = document.getElementById("header-cta");
-  headerCta.addEventListener("click", () => {
+  const headerCta = document.getElementById('header-cta');
+  headerCta.addEventListener('click', () => {
     scrollToSection();
   });
   function scrollToSection() {
     // Get a reference to the section you want to scroll to
-    var section = document.getElementById("product-feature");
+    var section = document.getElementById('product-feature');
 
     // Scroll to the section
-    section.scrollIntoView({ behavior: "smooth" });
+    section.scrollIntoView({ behavior: 'smooth' });
   }
 </script>
 
@@ -309,7 +298,7 @@ const productFeature = {
   }
   .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-      url("../images/bg.jpg");
+      url('../images/bg.jpg');
     background-position: center;
     height: 90vh;
     padding-block: 80px;
@@ -347,7 +336,7 @@ const productFeature = {
     border-radius: 100px;
   }
   .selling-point-image {
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -396,14 +385,13 @@ const productFeature = {
     display: block;
   }
   .background-footer {
-    border-radius: 100px;
     background:
       linear-gradient(
         0deg,
         rgba(0, 53, 84, 0.65) 0%,
         rgba(0, 53, 84, 0.65) 100%
       ),
-      url("../../public/images/bg-sea.jpg"),
+      url('/images/bg-sea.jpg'),
       lightgray 50% / cover no-repeat;
   }
 
@@ -419,5 +407,17 @@ const productFeature = {
     bottom: 8px;
     background-color: #e1e7ec;
     z-index: 1;
+  }
+
+  .button-header {
+    background-color: #0077b6;
+    color: white;
+  }
+
+  .centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>

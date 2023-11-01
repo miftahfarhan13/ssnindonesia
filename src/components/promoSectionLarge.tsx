@@ -11,14 +11,14 @@ export default function TestimonialsFade({
   full_description,
   pageHeaderBgImg,
   pageHeaderMinVh,
-  pageHeaderRadius,
+  pageHeaderRadius
 }: Props) {
   const styles = {
     pageHeader: {
-      backgroundImage: "url(" + pageHeaderBgImg + ")",
+      backgroundImage: 'url(' + pageHeaderBgImg + ')',
       minHeight: pageHeaderMinVh,
-      borderRadius: pageHeaderRadius,
-    },
+      borderRadius: pageHeaderRadius
+    }
   } as const;
 
   return (
@@ -29,7 +29,12 @@ export default function TestimonialsFade({
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 col-sm-9 text-center mx-auto">
-                <h3 className="text-white mb-4">{title}</h3>
+                <h3
+                  className="text-white mb-4"
+                  style={{ fontFamily: 'Playfair Display, serif' }}
+                >
+                  {title}
+                </h3>
                 <p className="lead text-white mb-sm-6 mb-4">
                   {full_description}
                 </p>

@@ -1,6 +1,6 @@
-import ProductFeatureImg from "./productFeatureImg";
-import ProductFeatureDetails from "./productFeatureDetails";
-import "./style.css";
+import ProductFeatureImg from './productFeatureImg';
+import ProductFeatureDetails from './productFeatureDetails';
+import './style.css';
 
 interface Props {
   title: string;
@@ -9,18 +9,18 @@ interface Props {
     alt: string;
   }[];
   full_description: string;
-  featuresDetails: Map<string, string>;
+  featuresDetails?: any;
 }
 
 export default function ProductOverview({
   title,
   images,
   full_description,
-  featuresDetails,
+  featuresDetails
 }: Props) {
   return (
     <>
-      <div className="card card-product card-plain">
+      <div className='py-5'>
         {/* <div className="row">
           <div className="col-12 col-lg-7 mx-auto text-center">
             {title.length != 0 && <h2 className="mb-3">{title}</h2>}
@@ -33,7 +33,10 @@ export default function ProductOverview({
           <div className="col-12 col-lg-6 pe-5">
             <div className="row">
               <div className="position-relative d-flex flex-column mb-2">
-                <h2 className="title-section align-self-start">
+                <h2
+                  className="title-section align-self-start"
+                  style={{ fontFamily: 'Playfair Display, serif' }}
+                >
                   Keunggulan Produk Kami
                 </h2>
                 <div className="line-bg"></div>

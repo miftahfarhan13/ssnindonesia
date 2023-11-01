@@ -1,16 +1,19 @@
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-3 start-0 end-0">
+    <nav
+      className="navbar navbar-expand-lg bg-white border-radius-sm top-0 shadow position-sticky py-3 start-0 end-0"
+      style={{ zIndex: 3 }}
+    >
       <div className="container px-1">
         <div>
           <img
             src="/images/ssn-logo.png"
-            style={{ height: 40, width: "auto", marginRight: 20 }}
+            style={{ height: 40, width: 'auto', marginRight: 20 }}
             alt="logo"
           />
           <a
-            className="navbar-brand fw-bolder ms-lg-0 "
-            href="https://www.creative-tim.com/astro"
+            className="navbar-brand fw-bolder ms-lg-0 d-none d-md-inline"
+            href="/"
           >
             Samudra Sukses Nusantara
           </a>
@@ -24,7 +27,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon mt-2">
+          <span className="navbar-toggler-icon">
             <span className="navbar-toggler-bar bar1"></span>
             <span className="navbar-toggler-bar bar2"></span>
             <span className="navbar-toggler-bar bar3"></span>
@@ -54,7 +57,7 @@ const Navbar = () => {
               <a
                 className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 "
                 aria-current="page"
-                href="/astro-ecommerce/"
+                href="/produk"
               >
                 Produk
               </a>
